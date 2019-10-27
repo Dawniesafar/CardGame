@@ -25,7 +25,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="C:/Program Files/Git/git-bash.exe" />
+    <property name="last_opened_file_path" value="C:/Program Files/Git/cmd/git.exe" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -71,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572106797264</updated>
       <workItem from="1572106805274" duration="12210000" />
-      <workItem from="1572161849448" duration="1264000" />
+      <workItem from="1572161849448" duration="5851000" />
     </task>
     <servers />
   </component>
