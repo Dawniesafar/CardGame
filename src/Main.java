@@ -19,6 +19,7 @@ public class Main {
 
         Card card1 = cardMngr.drawCard();
         Card card2 = cardMngr.drawCard();
+        Card card3 = cardMngr.drawCard();
         cardMngr.printAll(cardMngr.cardList);
 
     }
