@@ -10,6 +10,7 @@ import java.util.stream.Collectors;
 public class CardManager {
     protected List<Card> cardList = new ArrayList<>();
     int value = 1;
+    protected  List<Integer> values = new ArrayList<>();
 
     public CardManager() {
     }
@@ -68,21 +69,26 @@ public class CardManager {
         return shuffledCards;
     }
 
-    //TODO make sure the drawed card does not exist in the cardList
-    //TODO you can compare values easiest way!
+    //TODO task1 make sure the drawed card does not exist in the cardList
+    // you can compare values easiest way!
+    //TODO task2 make sure to disable the draw button when we have all
+    //cards on the deck.
     /**
      * Draw a random card from the deck
-     *
      * @return an object of cardK
      */
     public Card drawCard() {
+        Card randomCard = null;
         Random random = new Random();
-        int randomName = random.nextInt(13) + 1;
         int randomSuit = random.nextInt(3);
-        int Value = 0;
-
-        Card randomCard = new Card(randomName, getSuit(randomSuit), getValue(randomName, randomSuit), null);
-        cardList.add(randomCard);
+        int randomName = random.nextInt(13) + 1;
+        if(cardList.contains(randomName)) {
+            randomName = random.nextInt(13) + 1;
+        }
+        else {
+            randomCard = new Card(randomName, getSuit(randomSuit), getValue(randomName, randomSuit), null);
+            cardList.add(randomCard);
+        }
         return randomCard;
     }
 
@@ -131,5 +137,12 @@ public class CardManager {
         else if (suitRef == 3)
             return Suit.spades;
         else return null;
+    }
+
+    private void getValuesFromList(List<Card> cardlist){
+        for (Card c : cardlist)
+        {
+            values.add(c.getValue());
+        }
     }
 }
