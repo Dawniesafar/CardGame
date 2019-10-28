@@ -83,15 +83,17 @@ public class CardManager {
      * @return an object of cardK
      */
     public Card drawCard() {
+        getValuesFromList(cardList);
         Card randomCard = null;
         Random random = new Random();
         int randomSuit = random.nextInt(3);
         int randomName = random.nextInt(13) + 1;
-        if(cardList.contains(randomName)) {
+        int value = getValue(randomName, randomSuit);
+        if(values.contains(value)) {
             randomName = random.nextInt(13) + 1;
         }
         else {
-            randomCard = new Card(randomName, getSuit(randomSuit), getValue(randomName, randomSuit), null);
+            randomCard = new Card(randomName, getSuit(randomSuit), value, null);
             cardList.add(randomCard);
         }
         return randomCard;
