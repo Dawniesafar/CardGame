@@ -1,10 +1,7 @@
 import Modules.Card;
 import Modules.Suit;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class CardManager {
@@ -62,15 +59,23 @@ public class CardManager {
      * @return the list of the cards after shuffling.
      */
     public List<Card> shuffle(List<Card> cardList) {
-        List<Card> shuffledCards = new ArrayList<>();
+        List<Card> shuffledCards = cardList;
+        Random random = new Random();
         for (int i = 0; i < cardList.size(); i++) {
-            shuffledCards.add(drawCard());
+            int change = i + random.nextInt(cardList.size()-i);
+            swap(cardList,i,change);
         }
         return shuffledCards;
     }
 
-    //TODO task1 make sure the drawed card does not exist in the cardList
-    // you can compare values easiest way!
+    private void swap(List<Card> list, int i, int change){
+        Card helper = list.get(i);
+        Card changedCard = list.get(change);
+        list.set(i, changedCard);
+        list.set(change, helper);
+    }
+
+
     //TODO task2 make sure to disable the draw button when we have all
     //cards on the deck.
     /**

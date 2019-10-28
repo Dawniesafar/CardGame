@@ -20,6 +20,11 @@ public class Main {
         Card card1 = cardMngr.drawCard();
         Card card2 = cardMngr.drawCard();
         Card card3 = cardMngr.drawCard();
+        Card card4 = cardMngr.drawCard();
+        cardMngr.printAll(cardMngr.cardList);
+
+        System.out.println("***********");
+        cardMngr.shuffle(cardMngr.cardList);
         cardMngr.printAll(cardMngr.cardList);
 
     }
