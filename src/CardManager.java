@@ -1,6 +1,5 @@
 import Modules.Card;
 import Modules.Suit;
-
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -75,7 +74,6 @@ public class CardManager {
         list.set(change, helper);
     }
 
-
     //TODO task2 make sure to disable the draw button when we have all
     //cards on the deck.
     /**
@@ -93,7 +91,7 @@ public class CardManager {
             randomName = random.nextInt(13) + 1;
         }
         else {
-            randomCard = new Card(randomName, getSuit(randomSuit), value, null);
+            randomCard = new Card(randomName, getSuit(randomSuit), value, saveCardImage(value));
             cardList.add(randomCard);
         }
         return randomCard;
@@ -151,5 +149,12 @@ public class CardManager {
         {
             values.add(c.getValue());
         }
+    }
+
+    public String saveCardImage(int value){
+        String imagePath = "C:\\Users\\Dawnie Safar\\IdeaProjects\\Card Game\\src\\Resources\\"
+                + value + ".jpg";
+        //BufferedImage image = Main.getClass().getClassLoader().getResource(imagePath);
+        return imagePath;
     }
 }
