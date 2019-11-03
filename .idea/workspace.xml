@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c167185a-579d-418f-a9df-317c3d95a53d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Card Game/CardManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Card Game/CardManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Card Game/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Card Game/GUI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Card Game/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Card Game/Main$1.class" afterDir="false" />

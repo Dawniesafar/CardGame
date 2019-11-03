@@ -1,5 +1,6 @@
 import Modules.Card;
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
 import java.util.ArrayList;
 
@@ -16,6 +17,7 @@ public class GUI {
     public JButton drawBtn = new JButton("Draw");
     public JButton sortBtn = new JButton("Sort");
     public JButton shuffleBtn = new JButton("Shuffle");
+    public JButton clearBtn = new JButton("Clear");
 
     /**
      * Constructor setting panels and buttons in deck
@@ -34,11 +36,13 @@ public class GUI {
         drawBtn.setSize(10, 10);
         sortBtn.setSize(10, 10);
         shuffleBtn.setSize(10, 10);
+        clearBtn.setSize(10,10);
 
         //adding buttons to the panel
         buttonPanel.add(drawBtn, BorderLayout.AFTER_LAST_LINE);
         buttonPanel.add(sortBtn, BorderLayout.AFTER_LAST_LINE);
         buttonPanel.add(shuffleBtn, BorderLayout.AFTER_LAST_LINE);
+        buttonPanel.add(clearBtn, BorderLayout.AFTER_LAST_LINE);
         deck.add(BorderLayout.SOUTH,buttonPanel);
 
     }
@@ -58,5 +62,10 @@ public class GUI {
             jscrollPane.revalidate();
             jscrollPane.repaint();
         }
+    }
+
+    public void clearDeck(){
+        contentPanel.removeAll();
+        contentPanel.repaint();
     }
 }

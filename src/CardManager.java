@@ -97,7 +97,7 @@ public class CardManager {
             randomCard = new Card(randomName, getSuit(randomSuit), value, saveCardImage(value));
             cardList.add(randomCard);
         }
-        else if(cardList.size() > 0) {
+        else if(cardList.size() > 0 && cardList.size() < 52) {
             if(values.contains(value)) {
                 do {
                     randomName = random.nextInt(13) + 1;
@@ -106,6 +106,12 @@ public class CardManager {
             }
             randomCard = new Card(randomName, getSuit(randomSuit), value, saveCardImage(value));
             cardList.add(randomCard);
+        }
+        else if(cardList.size() == 52){
+            JOptionPane.showMessageDialog(null,
+                    "All cards are drawn. Please clear the deck!",
+                    "Info Message",
+                    JOptionPane.WARNING_MESSAGE);
         }
     }
 
@@ -169,5 +175,9 @@ public class CardManager {
         String imagePath = "C:\\Users\\Dawnie Safar\\IdeaProjects\\Card Game\\src\\Resources\\"
                 + value + ".jpg";
         return imagePath;
+    }
+
+    public void clearDeck(){
+        cardList.clear();
     }
 }

@@ -31,5 +31,13 @@ public class Main {
                 myGui.setDeck(sortedArray);
             }
         });
+
+        myGui.clearBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                cardMngr.clearDeck();
+                myGui.clearDeck();
+            }
+        });
     }
 }
