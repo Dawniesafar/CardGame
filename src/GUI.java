@@ -3,6 +3,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 
+/**
+ * This class is responsible for setting a graphical user interface
+ * that shows the deck and cards on each deck.
+ */
 public class GUI {
 
     public JFrame deck = new JFrame("Deck#1");
@@ -13,6 +17,9 @@ public class GUI {
     public JButton sortBtn = new JButton("Sort");
     public JButton shuffleBtn = new JButton("Shuffle");
 
+    /**
+     * Constructor setting panels and buttons in deck
+     */
     public GUI() {
         deck.setVisible(true);
         deck.setSize(900, 700);
@@ -35,6 +42,9 @@ public class GUI {
 
     }
 
+    /**
+     * @param cards list of cards to be exhibited on the deck.
+     */
     public void setDeck(ArrayList<Card> cards){
         contentPanel.removeAll();
         for (Card c : cards) {

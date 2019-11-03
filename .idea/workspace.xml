@@ -2,120 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c167185a-579d-418f-a9df-317c3d95a53d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Main$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Main$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Main$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/20.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/21.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/22.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/23.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/24.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/25.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/26.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/27.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/28.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/29.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/30.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/31.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/32.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/33.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/34.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/35.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/36.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/37.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/38.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/39.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/45.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/46.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/47.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/48.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/49.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/50.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/51.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/52.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/20.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/21.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/22.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/23.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/24.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/25.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/26.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/27.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/28.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/29.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/30.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/31.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/32.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/33.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/34.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/35.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/36.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/37.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/38.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/39.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/45.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/46.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/47.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/48.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/49.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/50.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/51.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/52.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/9.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Card Game/CardManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Card Game/CardManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Card Game/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Card Game/GUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Card Game/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Card Game/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Card Game/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Card Game/Main$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Card Game/Main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Card Game/Main$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Card Game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Card Game/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Card Game/Resources/40.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/40.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Card Game/Resources/41.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/41.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Card Game/Resources/42.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/42.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Card Game/Resources/43.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/43.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Card Game/Resources/44.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/44.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CardManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CardManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resources/40.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/40.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resources/41.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/41.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resources/42.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/42.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resources/43.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/43.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resources/44.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/44.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -213,16 +106,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/CardManager.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

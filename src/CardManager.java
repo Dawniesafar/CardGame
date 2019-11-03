@@ -3,6 +3,11 @@ import Modules.Suit;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * This class is responsible for the functionality of the mini game.
+ * All functions or draw a card, shuffle/sort cards are managed
+ * in this class.
+ */
 public class CardManager {
     protected static List<Card> cardList = new ArrayList<>();
     int value = 1;
@@ -74,11 +79,9 @@ public class CardManager {
         list.set(change, helper);
     }
 
-    //TODO task2 make sure to disable the draw button when we have all
-    //cards on the deck.
     /**
-     * Draw a random card from the deck
-     * @return an object of cardK
+     * Draw a random card
+     * @return an object of a card
      */
     public void drawCard() {
         getValuesFromList(cardList);
@@ -106,7 +109,6 @@ public class CardManager {
 
     /**
      * This method calculates the value for the given name and suit.
-     *
      * @param name the card number, king, queen or prince
      * @param suit the card suit(Hearts, Diamonds, Clover or Spades.
      * @return card value
@@ -135,7 +137,6 @@ public class CardManager {
 
     /**
      * Returns the Suit for the given suitRef
-     *
      * @param suitRef 0 is Hearts, 1 is Diamonds, 2 is Clover and 3 is spades.
      * @return the suit hearts, diamonds, clover or spades.
      */
@@ -151,6 +152,11 @@ public class CardManager {
         else return null;
     }
 
+    /**
+     * Adds values of cards existed on the deck to a list
+     * so we can check the newly drawn card is not on the deck.
+     * @param cardlist existed cards on the deck
+     */
     private void getValuesFromList(List<Card> cardlist){
         for (Card c : cardlist) {
             values.add(c.getValue());
