@@ -8,7 +8,7 @@ public class Main {
     public static void main(String args[]) {
         CardManager cardMngr = new CardManager();
         GUI myGui = new GUI();
-        
+
         myGui.drawBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {

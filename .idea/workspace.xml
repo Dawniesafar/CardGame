@@ -2,6 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c167185a-579d-418f-a9df-317c3d95a53d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Main$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Main$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Main$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/24.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/26.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/27.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/28.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/29.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/30.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/31.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/32.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/33.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/34.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/35.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/36.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/37.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/38.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/39.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/45.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/46.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/47.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/48.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/49.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/50.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/51.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/52.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Card Game/Resources/9.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Resources/1.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Resources/10.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Resources/11.jpg" afterDir="false" />
@@ -144,7 +194,7 @@
       <workItem from="1572106805274" duration="12210000" />
       <workItem from="1572161849448" duration="9294000" />
       <workItem from="1572630705196" duration="1585000" />
-      <workItem from="1572632744073" duration="5398000" />
+      <workItem from="1572632744073" duration="5763000" />
     </task>
     <servers />
   </component>
