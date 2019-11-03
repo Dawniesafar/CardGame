@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class CardManager {
-    protected List<Card> cardList = new ArrayList<>();
+    protected static List<Card> cardList = new ArrayList<>();
     int value = 1;
     protected  List<Integer> values = new ArrayList<>();
 
@@ -16,10 +16,10 @@ public class CardManager {
      *
      * @return list of 52 objects of cards
      */
-    public List<Card> createCards() {
+    public List<Card> fullDeck() {
         for (int suit = 0; suit < 4; suit++) {
             for (int name = 1; name < 14; name++) {
-                cardList.add(new Card(name, getSuit(suit), value, null));
+                cardList.add(new Card(name, getSuit(suit), value, saveCardImage(value)));
                 value++;
             }
         }
@@ -80,21 +80,28 @@ public class CardManager {
      * Draw a random card from the deck
      * @return an object of cardK
      */
-    public Card drawCard() {
+    public void drawCard() {
         getValuesFromList(cardList);
         Card randomCard = null;
         Random random = new Random();
         int randomSuit = random.nextInt(3);
         int randomName = random.nextInt(13) + 1;
-        int value = getValue(randomName, randomSuit);
-        if(values.contains(value)) {
+        int value = getValue(randomName,randomSuit);
+        if(cardList.size() <= 0) {
             randomName = random.nextInt(13) + 1;
-        }
-        else {
             randomCard = new Card(randomName, getSuit(randomSuit), value, saveCardImage(value));
             cardList.add(randomCard);
         }
-        return randomCard;
+        else if(cardList.size() > 0) {
+            if(values.contains(value)) {
+                do {
+                    randomName = random.nextInt(13) + 1;
+                    value = getValue(randomName, randomSuit);
+                } while (values.contains(value));
+            }
+            randomCard = new Card(randomName, getSuit(randomSuit), value, saveCardImage(value));
+            cardList.add(randomCard);
+        }
     }
 
     /**
@@ -145,16 +152,14 @@ public class CardManager {
     }
 
     private void getValuesFromList(List<Card> cardlist){
-        for (Card c : cardlist)
-        {
+        for (Card c : cardlist) {
             values.add(c.getValue());
         }
     }
 
-    public String saveCardImage(int value){
+    public String saveCardImage(int value) {
         String imagePath = "C:\\Users\\Dawnie Safar\\IdeaProjects\\Card Game\\src\\Resources\\"
                 + value + ".jpg";
-        //BufferedImage image = Main.getClass().getClassLoader().getResource(imagePath);
         return imagePath;
     }
 }
