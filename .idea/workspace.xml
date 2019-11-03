@@ -3,12 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="c167185a-579d-418f-a9df-317c3d95a53d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Card Game/CardManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Card Game/CardManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Card Game/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Card Game/GUI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Card Game/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Card Game/Main$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Card Game/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Card Game/Main$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Card Game/Main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Card Game/Main$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Card Game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Card Game/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CardManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CardManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
