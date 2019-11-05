@@ -104,7 +104,6 @@ public class CardManager {
         randomCard = new Card(randomName, getSuit(randomSuit), value, saveCardImage(value));
         cardList.add(randomCard);
         values.add(value);
-        System.out.println(value);
     }
 
     /**
@@ -167,8 +166,7 @@ public class CardManager {
     }
 
     public String saveCardImage(int value) {
-        String imagePath = "C:\\Users\\Dawnie Safar\\IdeaProjects\\Card Game\\src\\Resources\\"
-                + value + ".jpg";
+        String imagePath = System.getProperty("user.dir") + "\\src\\Resources\\" + value + ".jpg";
         return imagePath;
     }
 
