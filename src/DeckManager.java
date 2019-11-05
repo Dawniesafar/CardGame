@@ -21,6 +21,10 @@ public class DeckManager {
             public void actionPerformed(ActionEvent actionEvent) {
                 cardMngr.drawCard();
                 myGui.setDeck((ArrayList) cardMngr.cardList);
+                if(cardMngr.cardList.size()==52) {
+                    myGui.drawBtn.setEnabled(false);
+                    cardMngr.deckIsFullMsg();
+                }
             }
         });
     }

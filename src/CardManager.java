@@ -2,6 +2,7 @@ import Modules.Card;
 import Modules.Suit;
 import javax.swing.*;
 import java.util.*;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 /**
@@ -86,33 +87,24 @@ public class CardManager {
      * @return an object of a card
      */
     public void drawCard() {
-        getValuesFromList(cardList);
+//        getValuesFromList(cardList);
         Card randomCard = null;
         Random random = new Random();
-        int randomSuit = random.nextInt(3);
+        int randomSuit = random.nextInt(4);
         int randomName = random.nextInt(13) + 1;
         int value = getValue(randomName,randomSuit);
-        if(cardList.size() <= 0) {
-            randomName = random.nextInt(13) + 1;
-            randomCard = new Card(randomName, getSuit(randomSuit), value, saveCardImage(value));
-            cardList.add(randomCard);
-        }
-        else if(cardList.size() == 52){
-            JOptionPane.showMessageDialog(null,
-                    "All cards are drawn. Please clear the deck!",
-                    "Info Message",
-                    JOptionPane.WARNING_MESSAGE);
-        }
-        else if(cardList.size() > 0 && cardList.size() < 52) {
-            if(values.contains(value)) {
+
+        if(cardList.size() > 0 && cardList.size() < 52) {
                 do {
                     randomName = random.nextInt(13) + 1;
+                    randomSuit = random.nextInt(4);
                     value = getValue(randomName, randomSuit);
                 } while (values.contains(value));
-            }
-            randomCard = new Card(randomName, getSuit(randomSuit), value, saveCardImage(value));
-            cardList.add(randomCard);
         }
+             randomCard = new Card(randomName, getSuit(randomSuit), value, saveCardImage(value));
+             cardList.add(randomCard);
+             values.add(value);
+             System.out.println(value);
     }
 
     /**
@@ -179,5 +171,16 @@ public class CardManager {
 
     public void clearDeck(){
         cardList.clear();
+//        cardList.removeAll(cardList);
+        values.clear();
+    }
+
+    public void deckIsFullMsg(){
+        if(cardList.size() == 52){
+            JOptionPane.showMessageDialog(null,
+                    "All cards are drawn. Please clear the deck!",
+                    "Info Message",
+                    JOptionPane.WARNING_MESSAGE);
+        }
     }
 }

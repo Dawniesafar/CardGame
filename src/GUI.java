@@ -31,9 +31,9 @@ public class GUI{
     public GUI() {
 
         deck.setVisible(true);
-        deck.setSize(900, 740);
+        deck.setPreferredSize(new Dimension(900,740));
 
-        contentPanel.setLayout(new GridLayout(4,10,0,0));
+        contentPanel.setLayout(new GridLayout(4,13,0,0));
 
         jscrollPane = new JScrollPane(contentPanel);
         jscrollPane.setPreferredSize(new Dimension(600,500));
@@ -85,5 +85,6 @@ public class GUI{
     public void clearDeck(){
         contentPanel.removeAll();
         contentPanel.repaint();
+        drawBtn.setEnabled(true);
     }
 }

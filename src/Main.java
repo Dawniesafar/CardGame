@@ -14,6 +14,10 @@ public class Main {
             public void actionPerformed(ActionEvent actionEvent) {
                 mainCardMngr.drawCard();
                 mainGui.setDeck((ArrayList) mainCardMngr.cardList);
+                if(mainCardMngr.cardList.size()==52) {
+                    mainGui.drawBtn.setEnabled(false);
+                    mainCardMngr.deckIsFullMsg();
+                }
             }
         });
 
