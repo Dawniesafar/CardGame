@@ -31,12 +31,14 @@ public class GUI{
     public GUI() {
 
         deck.setVisible(true);
-        deck.setSize(1000, 740);
+        deck.setSize(900, 740);
 
         contentPanel.setLayout(new GridLayout(4,10,0,0));
 
         jscrollPane = new JScrollPane(contentPanel);
-        jscrollPane.setSize(300,300);
+        jscrollPane.setPreferredSize(new Dimension(600,500));
+        jscrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+        jscrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
         jscrollPane.setVisible(true);
 
         // Setting button size
@@ -57,9 +59,11 @@ public class GUI{
         menuBar.add(menu);
         menuBar.setVisible(true);
 
+        // Setting the deck frame
         deck.add(BorderLayout.NORTH, menuBar);
         deck.add(BorderLayout.SOUTH,buttonPanel);
         deck.add(BorderLayout.CENTER,jscrollPane);
+        deck.pack();
     }
 
     /**
@@ -72,11 +76,10 @@ public class GUI{
             label.setIcon(new ImageIcon(c.getImage()));
             label.setSize(10,10);
             label.setBounds(10,10,10,10);
-            contentPanel.add(BorderLayout.CENTER, label);
-            contentPanel.setLayout(new GridLayout(4,10,0,0));
-            jscrollPane.revalidate();
-            jscrollPane.repaint();
+            contentPanel.add(BorderLayout.PAGE_END, label);
         }
+        jscrollPane.revalidate();
+        jscrollPane.repaint();
     }
 
     public void clearDeck(){

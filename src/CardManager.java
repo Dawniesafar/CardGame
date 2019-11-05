@@ -53,6 +53,7 @@ public class CardManager {
         List<Card> sortedCards = cardList.stream()
                 .sorted(Comparator.comparing(Card::getValue))
                 .collect(Collectors.toList());
+        this.cardList = sortedCards;
         return sortedCards;
     }
 
