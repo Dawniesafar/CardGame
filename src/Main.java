@@ -1,5 +1,4 @@
 import Modules.Card;
-import Modules.Suit;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -7,38 +6,57 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String args[]) {
-        CardManager cardMngr = new CardManager();
-        GUI myGui = new GUI();
+        GUI mainGui = new GUI();
+        CardManager mainCardMngr = new CardManager();
 
-        myGui.drawBtn.addActionListener(new ActionListener() {
+        mainGui.drawBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                cardMngr.drawCard();
-                myGui.setDeck((ArrayList)cardMngr.cardList);
+                mainCardMngr.drawCard();
+                mainGui.setDeck((ArrayList) mainCardMngr.cardList);
             }
         });
 
-        myGui.shuffleBtn.addActionListener(new ActionListener() {
+        mainGui.shuffleBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                cardMngr.shuffle(cardMngr.cardList);
-                myGui.setDeck((ArrayList) cardMngr.cardList);
+                mainCardMngr.shuffle(mainCardMngr.cardList);
+                mainGui.setDeck((ArrayList) mainCardMngr.cardList);
             }
         });
 
-        myGui.sortBtn.addActionListener(new ActionListener() {
+        mainGui.sortBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                ArrayList<Card> sortedArray = (ArrayList) cardMngr.sort(cardMngr.cardList);
-                myGui.setDeck(sortedArray);
+                ArrayList<Card> sortedArray = (ArrayList) mainCardMngr.sort(mainCardMngr.cardList);
+                mainGui.setDeck(sortedArray);
             }
         });
 
-        myGui.clearBtn.addActionListener(new ActionListener() {
+        mainGui.clearBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                cardMngr.clearDeck();
-                myGui.clearDeck();
+                mainCardMngr.clearDeck();
+                mainGui.clearDeck();
+            }
+        });
+
+        mainGui.newDeck.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                GUI.deckNr++;
+                DeckManager deckManager = new DeckManager();
+                deckManager.drawCard();
+                deckManager.shuffleCards();
+                deckManager.sortCards();
+                deckManager.clearDeck();
+            }
+        });
+
+        mainGui.exit.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                System.exit(0);
             }
         });
     }

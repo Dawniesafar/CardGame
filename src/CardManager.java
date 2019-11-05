@@ -1,6 +1,5 @@
 import Modules.Card;
 import Modules.Suit;
-
 import javax.swing.*;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -11,7 +10,7 @@ import java.util.stream.Collectors;
  * in this class.
  */
 public class CardManager {
-    protected static List<Card> cardList = new ArrayList<>();
+    protected List<Card> cardList = new ArrayList<>();
     int value = 1;
     protected  List<Integer> values = new ArrayList<>();
 
@@ -97,6 +96,12 @@ public class CardManager {
             randomCard = new Card(randomName, getSuit(randomSuit), value, saveCardImage(value));
             cardList.add(randomCard);
         }
+        else if(cardList.size() == 52){
+            JOptionPane.showMessageDialog(null,
+                    "All cards are drawn. Please clear the deck!",
+                    "Info Message",
+                    JOptionPane.WARNING_MESSAGE);
+        }
         else if(cardList.size() > 0 && cardList.size() < 52) {
             if(values.contains(value)) {
                 do {
@@ -106,12 +111,6 @@ public class CardManager {
             }
             randomCard = new Card(randomName, getSuit(randomSuit), value, saveCardImage(value));
             cardList.add(randomCard);
-        }
-        else if(cardList.size() == 52){
-            JOptionPane.showMessageDialog(null,
-                    "All cards are drawn. Please clear the deck!",
-                    "Info Message",
-                    JOptionPane.WARNING_MESSAGE);
         }
     }
 

@@ -2,37 +2,44 @@ import Modules.Card;
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
+import java.security.Guard;
 import java.util.ArrayList;
 
 /**
  * This class is responsible for setting a graphical user interface
  * that shows the deck and cards on each deck.
  */
-public class GUI {
+public class GUI{
 
-    public JFrame deck = new JFrame("Deck#1");
+    public static int deckNr = 1;
+    public JFrame deck = new JFrame("Deck# " + deckNr);
+    public JScrollPane jscrollPane;
     public JPanel contentPanel = new JPanel();
     public JPanel buttonPanel = new JPanel();
-    public JScrollPane jscrollPane = new JScrollPane();
     public JButton drawBtn = new JButton("Draw");
     public JButton sortBtn = new JButton("Sort");
     public JButton shuffleBtn = new JButton("Shuffle");
     public JButton clearBtn = new JButton("Clear");
+    public JMenuBar menuBar = new JMenuBar();
+    public JMenu menu = new JMenu("Options");
+    public JMenuItem newDeck = new JMenuItem("New Deck");
+    public JMenuItem exit = new JMenuItem("Exit");
 
     /**
      * Constructor setting panels and buttons in deck
      */
     public GUI() {
+
         deck.setVisible(true);
-        deck.setSize(900, 700);
-        deck.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        //contentPanel.setLayout(new GridLayout(4,10,0,0));
+        deck.setSize(1000, 740);
+
+        contentPanel.setLayout(new GridLayout(4,10,0,0));
 
         jscrollPane = new JScrollPane(contentPanel);
         jscrollPane.setSize(300,300);
         jscrollPane.setVisible(true);
-        deck.add(jscrollPane);
 
+        // Setting button size
         drawBtn.setSize(10, 10);
         sortBtn.setSize(10, 10);
         shuffleBtn.setSize(10, 10);
@@ -43,8 +50,16 @@ public class GUI {
         buttonPanel.add(sortBtn, BorderLayout.AFTER_LAST_LINE);
         buttonPanel.add(shuffleBtn, BorderLayout.AFTER_LAST_LINE);
         buttonPanel.add(clearBtn, BorderLayout.AFTER_LAST_LINE);
-        deck.add(BorderLayout.SOUTH,buttonPanel);
 
+        // Setting menu bar
+        menu.add(newDeck);
+        menu.add(exit);
+        menuBar.add(menu);
+        menuBar.setVisible(true);
+
+        deck.add(BorderLayout.NORTH, menuBar);
+        deck.add(BorderLayout.SOUTH,buttonPanel);
+        deck.add(BorderLayout.CENTER,jscrollPane);
     }
 
     /**
