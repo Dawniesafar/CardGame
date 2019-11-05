@@ -4,12 +4,15 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
+/**
+ * Manages the decks when having multi-deck game.
+ */
 public class DeckManager {
 
     private CardManager cardMngr;
     private GUI myGui;
 
-    public DeckManager(){
+    public DeckManager() {
         myGui = new GUI();
         cardMngr = new CardManager();
         myGui.menuBar.setVisible(false);
@@ -21,7 +24,7 @@ public class DeckManager {
             public void actionPerformed(ActionEvent actionEvent) {
                 cardMngr.drawCard();
                 myGui.setDeck((ArrayList) cardMngr.cardList);
-                if(cardMngr.cardList.size()==52) {
+                if (cardMngr.cardList.size() == 52) {
                     myGui.drawBtn.setEnabled(false);
                     cardMngr.deckIsFullMsg();
                 }

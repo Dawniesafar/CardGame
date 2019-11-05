@@ -1,8 +1,8 @@
 import Modules.Card;
 import Modules.Suit;
+
 import javax.swing.*;
 import java.util.*;
-import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 /**
@@ -12,8 +12,8 @@ import java.util.stream.Collectors;
  */
 public class CardManager {
     protected List<Card> cardList = new ArrayList<>();
+    protected List<Integer> values = new ArrayList<>();
     int value = 1;
-    protected  List<Integer> values = new ArrayList<>();
 
     public CardManager() {
     }
@@ -69,13 +69,13 @@ public class CardManager {
         List<Card> shuffledCards = cardList;
         Random random = new Random();
         for (int i = 0; i < cardList.size(); i++) {
-            int change = i + random.nextInt(cardList.size()-i);
-            swap(cardList,i,change);
+            int change = i + random.nextInt(cardList.size() - i);
+            swap(cardList, i, change);
         }
         return shuffledCards;
     }
 
-    private void swap(List<Card> list, int i, int change){
+    private void swap(List<Card> list, int i, int change) {
         Card helper = list.get(i);
         Card changedCard = list.get(change);
         list.set(i, changedCard);
@@ -84,31 +84,32 @@ public class CardManager {
 
     /**
      * Draw a random card
+     *
      * @return an object of a card
      */
     public void drawCard() {
-//        getValuesFromList(cardList);
         Card randomCard = null;
         Random random = new Random();
         int randomSuit = random.nextInt(4);
         int randomName = random.nextInt(13) + 1;
-        int value = getValue(randomName,randomSuit);
+        int value = getValue(randomName, randomSuit);
 
-        if(cardList.size() > 0 && cardList.size() < 52) {
-                do {
-                    randomName = random.nextInt(13) + 1;
-                    randomSuit = random.nextInt(4);
-                    value = getValue(randomName, randomSuit);
-                } while (values.contains(value));
+        if (cardList.size() > 0 && cardList.size() < 52) {
+            do {
+                randomName = random.nextInt(13) + 1;
+                randomSuit = random.nextInt(4);
+                value = getValue(randomName, randomSuit);
+            } while (values.contains(value));
         }
-             randomCard = new Card(randomName, getSuit(randomSuit), value, saveCardImage(value));
-             cardList.add(randomCard);
-             values.add(value);
-             System.out.println(value);
+        randomCard = new Card(randomName, getSuit(randomSuit), value, saveCardImage(value));
+        cardList.add(randomCard);
+        values.add(value);
+        System.out.println(value);
     }
 
     /**
      * This method calculates the value for the given name and suit.
+     *
      * @param name the card number, king, queen or prince
      * @param suit the card suit(Hearts, Diamonds, Clover or Spades.
      * @return card value
@@ -137,6 +138,7 @@ public class CardManager {
 
     /**
      * Returns the Suit for the given suitRef
+     *
      * @param suitRef 0 is Hearts, 1 is Diamonds, 2 is Clover and 3 is spades.
      * @return the suit hearts, diamonds, clover or spades.
      */
@@ -155,9 +157,10 @@ public class CardManager {
     /**
      * Adds values of cards existed on the deck to a list
      * so we can check the newly drawn card is not on the deck.
+     *
      * @param cardlist existed cards on the deck
      */
-    private void getValuesFromList(List<Card> cardlist){
+    private void getValuesFromList(List<Card> cardlist) {
         for (Card c : cardlist) {
             values.add(c.getValue());
         }
@@ -169,14 +172,16 @@ public class CardManager {
         return imagePath;
     }
 
-    public void clearDeck(){
+    public void clearDeck() {
         cardList.clear();
-//        cardList.removeAll(cardList);
         values.clear();
     }
 
-    public void deckIsFullMsg(){
-        if(cardList.size() == 52){
+    /**
+     * Pop-up message when the deck is full with 52 cards.
+     */
+    public void deckIsFullMsg() {
+        if (cardList.size() == 52) {
             JOptionPane.showMessageDialog(null,
                     "All cards are drawn. Please clear the deck!",
                     "Info Message",
